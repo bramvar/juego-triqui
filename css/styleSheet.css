@@ -1,0 +1,94 @@
+html {
+    box-sizing: border-box;
+}
+
+
+#main {
+    display: flex;
+    justify-content: center;
+}
+
+body {
+    background-color: rgb(46, 45, 45);
+} 
+
+.container {
+    height: 600px;
+    width: 600px;
+    display: flex;
+    flex-direction: column;
+    font-family: sans-serif;
+    
+}
+
+.hea_fo {
+    display: flex;
+    align-items: center;
+    background:  rgb(46, 45, 45);
+    color:rgb(241, 240, 240)
+}
+
+.header_player {
+    padding: 10px;
+}
+
+.cont-t {
+    text-align: center;
+}
+
+.header_status {
+    padding: 10px;
+    flex-grow: 1;
+    text-align: center;
+}
+
+.button_restart {
+    cursor: pointer;
+}
+
+.button_restart:hover {
+    background: greenyellow;
+}
+
+.score_player1 {
+    padding: 10px;
+
+}
+
+.score_tie {
+    padding: 10px;
+    flex-grow: 1;
+    text-align: center;
+}
+
+
+.game {
+    display:grid;
+    gap: 5px;
+    flex-grow: 1;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(3,1fr);
+    background: rgb(231, 231, 231);
+}
+
+.board_square{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-width: 5px;
+    font-size: 50px;
+    cursor: pointer;
+    color: rgb(241, 240, 240);
+    border-color: black;
+    background: rgb(46, 45, 45);
+}
+
+.win {
+   background: rgb(241, 240, 240); 
+   color: rgb(46, 45, 45);
+   font-size: 80px;
+}
+
+.board_square:hover{
+    background: rgb(110, 109, 109);
+}
